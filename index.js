@@ -4,8 +4,14 @@ const fs = require('node:fs');
 const { Client, Intents, Collection } = require('discord.js');
 const token = process.env.token;
 const PORT = process.env.PORT || 5000;
+const app = express();
 
-express().listen(PORT, () => console.log(`Listening on ${PORT}`));
+app.get('/', (req, res) => {
+	console.log('get attempt');
+	res.send('ok');
+});
+
+app.listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
