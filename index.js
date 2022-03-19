@@ -1,7 +1,12 @@
 require('dotenv').config();
+const express = require('express');
 const fs = require('node:fs');
 const { Client, Intents, Collection } = require('discord.js');
+const { listen } = require('express/lib/application');
 const token = process.env.token;
+const PORT = process.env.PORT || 5000
+
+express().listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
