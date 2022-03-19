@@ -2,9 +2,8 @@ require('dotenv').config();
 const express = require('express');
 const fs = require('node:fs');
 const { Client, Intents, Collection } = require('discord.js');
-const { listen } = require('express/lib/application');
 const token = process.env.token;
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 5000;
 
 express().listen(PORT, () => console.log(`Listening on ${PORT}`));
 
