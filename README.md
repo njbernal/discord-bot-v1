@@ -10,7 +10,8 @@ It responds to two commands (global).
 # /crypto (symbol)
 
 Required: symbol
+Connects to [Binance](https://www.binance.us/en/home) API and returns the latest quote on popular Crypto currencies.
 
 # /joke
 
-Returns a dad joke from [icanhazdadjoke](https://icanhazdadjoke.com/)
+Connects to [icanhazdadjoke](https://icanhazdadjoke.com/) API and returns a random dad joke.
