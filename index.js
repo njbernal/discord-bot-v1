@@ -7,8 +7,10 @@ const PORT = process.env.PORT || 5000;
 const app = express();
 
 app.get('/', (req, res) => {
-	console.log('get attempt');
-	res.send('ok');
+	console.log(`current: ${req.params.current}`);
+	let counter = Number(req.params.current);
+	counter++;
+	res.send(`Heroku OK ${counter}`);
 });
 
 app.listen(PORT, () => console.log(`Listening on ${PORT}`));
