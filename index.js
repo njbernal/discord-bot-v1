@@ -6,8 +6,11 @@ const token = process.env.token;
 const PORT = process.env.PORT || 5000;
 const app = express();
 
+app.use(express.urlencoded({ extended:false }));
+app.use(express.json());
+
 app.get('/', (req, res) => {
-	console.log(`current: ${req.params.current}`);
+	console.log(`current: ${req.body}`);
 	let counter = Number(req.params.current);
 	counter++;
 	res.send(`Heroku OK ${counter}`);
