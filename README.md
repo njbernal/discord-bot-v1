@@ -3,7 +3,7 @@
 This bot is a work in progress.
 It is implemented with the amazing discord.js library.
 
-** npm install **
+**npm install**
 
 ## Commands
 
