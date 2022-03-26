@@ -9,6 +9,10 @@ Currently it has two commands:
 /joke
 /crypto
 
+Each command is in its own file inside the **commands** folder
+
+In order to test locally you would need to create your own Discord App and get a token via [Discord Developer Portal](https://ptb.discord.com/developers/docs)
+
 ### /crypto (symbol)
 
 Required: symbol
