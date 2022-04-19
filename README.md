@@ -2,6 +2,7 @@
 
 This bot is a work in progress.
 It is implemented with the amazing discord.js library.
+Add it to your discord via: http://www.nickbernal.com/discord
 
 **npm install**
 
